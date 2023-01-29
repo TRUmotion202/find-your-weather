@@ -1,0 +1,140 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(public/bg-clouds.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.tittle-weather {
+  text-align: center;
+  font-size: var(--big-text);
+  margin: 0;
+}
+
+.container {
+  background-color: #c9c9c990;
+  padding: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 10px;
+}
+
+.content__form {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+
+.content__input {
+  border: 0;
+  padding: 10px 5px;
+  background-color: #ffffff75;
+  border-radius: 15px;
+}
+
+.content__place {
+  font-size: var(--big-text);
+  align-self: flex-start;
+}
+
+.content__weather-img {
+  display: flex;
+  justify-content: center;
+}
+
+.content__temp {
+  text-align: center;
+  font-size: var(--h1-text);
+  margin: var(--m-2) 0;
+}
+
+.content__description {
+  text-align: center;
+  font-size: var(--normal-text);
+  margin: var(--m-1) 0;
+  font-weight: 700;
+  color: indigo;
+}
+
+.content__wind, 
+.content__clouds, 
+.content__pressure {
+  font-size: var(--small-text);
+  color: darkslateblue;
+}
+
+.button-temps {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  
+}
+
+@media screen and (min-width: 992px) {
+  .widhtDesktop {
+    max-width: 1024px;
+    width: 100%;
+  }
+  
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    column-gap: 30px;
+  }
+
+  .tittle-weather {
+    font-size: var(--h1-text);
+  }
+
+  .content__section1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid black;
+  }
+
+  .content__place {
+    margin-bottom: 0;
+  }
+  .content__form {
+    margin-left: 10px;
+  }
+
+  .content__weather-img {
+    scale: 1.25;
+  }
+
+  .content__section2 {
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content__description {
+    font-size: var(--h1-text);
+    position: absolute;
+    top: 60px;
+  }
+
+  .content__wind,
+  .content__clouds,
+  .content__pressure {
+    font-size: var(--h2-text);
+  }
+
+  .button-temps {
+    position: absolute;
+    bottom: 60px;
+    align-self: center;
+  }
+}
