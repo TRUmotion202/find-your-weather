@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(public/bg-clouds.jpg) no-repeat center center;
+  background: url(/public/bg-clouds.jpg) no-repeat center center;
   background-size: cover;
 }
 
