@@ -1,11 +1,13 @@
+body {
+  background: url(src/assets/bg-clouds.jpg) no-repeat center center;
+  background-size: cover;
+}
 .App {
   width: 100vw;
-  height: 100vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(src/assets/bg-clouds.jpg) no-repeat center center;
-  background-size: cover;
 }
 
 .tittle-weather {
