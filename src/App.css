@@ -1,13 +1,11 @@
-body {
-  background: url(src/assets/bg-clouds.jpg) no-repeat center center;
-  background-size: cover;
-}
 .App {
   width: 100vw;
+  height: 640px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(127, 214, 255);
 }
 
 .tittle-weather {
@@ -79,6 +77,9 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  .App {
+    height: 100vh;
+  }
   .widhtDesktop {
     max-width: 1024px;
     width: 100%;
